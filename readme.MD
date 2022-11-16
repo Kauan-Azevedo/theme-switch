@@ -1,29 +1,26 @@
-# Como usar o themeSwitch
-primeiramente sera necessario converter o .ts para .js usando o comando
+# 🎉Como usar o themeSwitch
+Primeiramente será necessário converter o arquivo themeSwitch.ts para .js, através do seguinte comando:
 ```bash
-    'npx tsc themeSwitch.ts'
+    npx tsc themeSwitch.ts
 ```
-após isso será criado um arquivo .js.
+após a criação do arquivo themeSwitch.js, será necessário possuir uma checkbox com id "checkbox"
 
-necessario haver um checkbox com id de checkbox.
+* exemplo:
+    ```html
+    <input type="checkbox" id="checkbox" />
+    ```
 
-exemplo:
-```html
-<input type="checkbox" id="checkbox" />
-```
+após a inclusão do checkbox será necessário haver um css com as variaveis no :root e no [data-theme='dark']
 
+* exemplo:
+    ```css
+    :root{
+        --bg-color: white; <- variaveis a serem alteradas
+        --text-color: black; <- variaveis a serem alteradas
+    }
 
-necessario haver um css com variaveis no :root e usando o [data-theme='dark']
-
-exemplo:
-```css
-:root{
-    --bg-color: white;
-    --text-color: black;
-}
-
-[data-theme='dark']{
-    --bg-color: black;
-    --text-color: white;
-}
-```
+    [data-theme='dark']{
+        --bg-color: black;
+        --text-color: white;
+    }  <- modo escuro ativado irá substituir os de mesmo nome
+    ```
