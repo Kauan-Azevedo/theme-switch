@@ -15,12 +15,12 @@ após a inclusão do checkbox será necessário haver um css com as variaveis no
 * exemplo:
     ```css
     :root{
-        --bg-color: white; <- variaveis a serem alteradas
-        --text-color: black; <- variaveis a serem alteradas
+        --bg-color: white; /* <- variaveis a serem alteradas */
+        --text-color: black; /* <- variaveis a serem alteradas */
     }
 
     [data-theme='dark']{
         --bg-color: black;
         --text-color: white;
-    }  <- modo escuro ativado irá substituir os de mesmo nome
+    }  /* <- modo escuro ativado irá substituir os de mesmo nome */
     ```
