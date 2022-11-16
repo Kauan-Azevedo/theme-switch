@@ -1,16 +1,16 @@
-const toggleSwitch = document.querySelector('#checkbox');
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+const toggleSwitch = <HTMLInputElement> document.querySelector('#checkbox')
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
 
-
-if (currentTheme) {
+if(currentTheme){
     document.documentElement.setAttribute('data-theme', currentTheme);
 
-    if (currentTheme === 'dark'){
+    if(currentTheme === 'dark'){
         toggleSwitch.checked = true;
     }
 }
 
-function switchTheme(e) {
+// e: {target: HTMLButtonElement}
+function switchTheme(e: {target: HTMLInputElement}){
     if(e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
@@ -19,6 +19,4 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'light');
     }
 }
-toggleSwitch.addEventListener('click', switchTheme);
-
-
+toggleSwitch.addEventListener('click', () => switchTheme);
