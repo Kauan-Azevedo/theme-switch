@@ -1,5 +1,6 @@
-const toggleSwitch = <HTMLInputElement> document.querySelector('#checkbox')
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
+const toggleSwitch = <HTMLInputElement> document.querySelector('#theme-switch');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+
 
 if(currentTheme){
     document.documentElement.setAttribute('data-theme', currentTheme);
