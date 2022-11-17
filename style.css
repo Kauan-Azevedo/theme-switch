@@ -1,0 +1,45 @@
+:root{
+    --bg-color: white;
+    --text-color: black;
+}
+
+[data-theme='dark']{
+    --bg-color: black;
+    --text-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header{
+    max-width: 1244px;
+    margin: 0 auto;
+    padding: 4px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    height: 100%;
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+
