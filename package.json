@@ -1,0 +1,23 @@
+{
+  "name": "theme-switch",
+  "version": "1.0.0",
+  "description": "theme switch",
+  "main": "themeSwitch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kauan-Azevedo/theme-switcher.git"
+  },
+  "bin": {
+    "themeSwitch": "./bin/theme-legal.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kauan-Azevedo/theme-switcher/issues"
+  },
+  "homepage": "https://github.com/Kauan-Azevedo/theme-switcher#readme"
+}
