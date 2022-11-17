@@ -3,14 +3,15 @@ Primeiramente será necessário converter o arquivo themeSwitch.ts para .js, atr
 ```bash
     npx tsc themeSwitch.ts
 ```
-após a criação do arquivo themeSwitch.js, será necessário possuir uma checkbox com id "checkbox"
+
+após a criação do arquivo themeSwitch.js, será necessário possuir uma checkbox com id "theme-switch".
 
 * exemplo:
     ```html
-    <input type="checkbox" id="checkbox" />
+    <input type="checkbox" id="theme-switch" />
     ```
 
-após a inclusão do checkbox será necessário haver um css com as variaveis no :root e no [data-theme='dark']
+após a inclusão do checkbox será necessário haver um css com as variaveis no :root e no [data-theme='dark'].
 
 * exemplo:
     ```css
