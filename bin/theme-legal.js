@@ -1,2 +1,2 @@
-const theme = require('../themeSwitch.js').themeSwitch;
+import { themeSwitch as theme } from '../themeSwitch.js';
 theme();
